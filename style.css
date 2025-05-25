@@ -1,0 +1,11 @@
+/* <!-- Custom CSS --> */
+/* Custom styles to complement Tailwind */
+.drawer {
+  transition: transform 0.3s ease-in-out;
+}
+.drawer-overlay {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.drawer-content {
+  transition: transform 0.3s ease-in-out;
+}
