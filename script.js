@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const openDrawerBtn = document.getElementById("open-drawer");
   const closeDrawerBtn = document.getElementById("close-drawer");
   const drawerContent = document.querySelector(".drawer-content");
-
   // Function to open the drawer
   function openDrawer() {
     drawer.classList.remove("-translate-x-full");
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     drawerOverlay.classList.remove("opacity-0", "invisible");
     drawerOverlay.classList.add("opacity-50", "visible");
   }
-
   // Function to close the drawer
   function closeDrawer() {
     drawer.classList.remove("translate-x-0");
@@ -20,12 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
     drawerOverlay.classList.remove("opacity-50", "visible");
     drawerOverlay.classList.add("opacity-0", "invisible");
   }
-
   // Event listeners
   openDrawerBtn.addEventListener("click", openDrawer);
   closeDrawerBtn.addEventListener("click", closeDrawer);
   drawerOverlay.addEventListener("click", closeDrawer);
-
   // Close drawer when clicking outside on mobile
   document.addEventListener("click", function (event) {
     if (
@@ -37,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
       closeDrawer();
     }
   });
-
   // Handle window resize
   function handleResize() {
     if (window.innerWidth >= 768) {
@@ -52,10 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
       drawer.classList.add("-translate-x-full");
     }
   }
-
   // Initial check
   handleResize();
-
   // Listen for resize events
   window.addEventListener("resize", handleResize);
 });
