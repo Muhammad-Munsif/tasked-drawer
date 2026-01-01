@@ -1,4 +1,4 @@
- <script>
+ 
     document.addEventListener("DOMContentLoaded", function () {
       // ====== DOM ELEMENTS ======
       const drawer = document.getElementById("drawer");
@@ -234,4 +234,4 @@
         showNotification("Welcome to Dashboard Pro!", "success");
       }, 1000);
     });
-  </script>
+  
